@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>css规范</title>
+        <style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html,body{
+				height: 100%;
+			}
+			body{
+				background: #f5f5f5;
+			}
+			h1{
+				text-align: center;
+			}
+			.container{
+				width: 998px;
+				min-height: 600px;
+				margin: 0px auto;
+				margin-bottom: 10px;
+				padding: 5px 0;
+				background: #fff;
+			}
+			ul{
+				list-style: none;
+				padding: 0 30px;
+			}
+			li{
+				height: 30px;
+				line-height: 30px;
+				border-bottom: 1px dotted #abcdef;
+			}
+			h1{
+				padding: 10px 0;
+				color: brown;
+				background: #53bb47;
+				box-shadow: 0 2px 3px #53bb47;
+			}
+			h3{
+				padding: 20px 0 20px 10px;
+				color: skyblue;
+			}
+			p{
+				width: 980px;
+				height: 20px;
+				line-height: 20px;
+				text-align: right;
+				margin: 5px auto;
+			}
+			.friendlink{
+				color: orange;
+			}
+			.friendlink:hover{
+				color: #abcdef;
+			}
+			.footer{
+				height: 40px;
+				line-height: 40px;
+				font-size: 14px;
+				text-align: center;
+				background: rgba(0, 0, 0, .38);
+			}
+        </style>
+    </head>
+    <body>
+    	<h1>css规范</h1>
+		<p class="copyright">--作者:  <a href="javascript:void(0)" class="friendlink">伞下你的笑</a></p>
+    	<div class="container">
+	    	<h3>css书写顺序</h3>
+	    	<ul>
+	    		<li>1.位置大小属性(position,top,right,z-index,display,float)</li>
+	    		<li>2.大小(width,height,margin,padding)</li>
+	    		<li>3.文字系列(font,line-height,letter-spacing,color,text-align)</li>
+	    		<li>4.背景(bakground,border)</li>
+	    		<li>5.其它(animate,transition)</li>
+	    	</ul>
+	    	<h3>css书写规范</h3>
+	    	<ul>
+	    		<li>1.一律小写</li>
+	    		<li>2.尽量用英文</li>
+	    		<li>3.不用下划线</li>
+	    		<li>4.尽量不缩写,除非一看就明白的单词如 .nav</li>
+	    		<li>5.使用缩写 magrin、padding的复合写法</li>
+	    		<li>6.去掉小数点前面的0 opacity: .4</li>
+	    		<li>7.十六进制颜色代码缩写 #f00</li>
+	    		<li>8.连字符css选择命名规范 .main-title</li>
+	    		<li>9.不要随意使用id</li>
+	    		<li>10.为选择器添加状态前缀 .is-widthrawal</li>
+	    	</ul>
+	    	<h3>常用的css命名规则</h3>
+	    	<ul>
+	    		<li>1.头: header</li>
+	    		<li>2.内容: content/container</li>
+	    		<li>3.尾: footer</li>
+	    		<li>4.导航: nav</li>
+	    		<li>5.侧边栏: sidebar</li>
+	    		<li>6.栏目: column</li>
+	    		<li>7.版心: wrapper</li>
+	    		<li>8.左中右: left/right/center</li>
+	    		<li>9.登录条: loginbar</li>
+	    		<li>10.标志: logo</li>
+	    		<li>11.广告: banner</li>
+	    		<li>12.页面主体: main</li>
+	    		<li>13.热点: hot</li>
+	    		<li>14.新闻: news</li>
+	    		<li>15.下载: download</li>
+	    		<li>16.自导航: subnav</li>
+	    		<li>17.菜单: menu</li>
+	    		<li>18.子菜单: submenu</li>
+	    		<li>19.搜索: search</li>
+	    		<li>20.友情链接: friendlink</li>
+	    		<li>21.页脚: footer</li>
+	    		<li>22.版权: copyright</li>
+	    		<li>23.滚动: scroll</li>
+	    		<li>24.内容: content</li>
+	    		<li>25.标签: tags</li>
+	    		<li>26.文章列表: list</li>
+	    		<li>27.提示信息: msg/info</li>
+	    		<li>28.小技巧: tips</li>
+	    		<li>29.栏目标题: tilte</li>
+	    		<li>30.加入: joinus</li>
+	    		<li>31.指南: guide</li>
+	    		<li>32.服务: service</li>
+	    		<li>33.注册: regsiter</li>
+	    		<li>34.状态: status</li>
+	    		<li>35.投票: vote</li>
+	    		<li>36.合作伙伴: partner</li>
+	    	</ul>
+	    	<h3>注释写法</h3>
+	    	<ul>
+	    		<li>/* header start */</li>
+	    		<li>内容......</li>
+	    		<li>/* header end */</li>
+	    	</ul>
+	    	<h3>css样式表文件命名</h3>
+	    	<ul>
+	    		<li>1.主要的 master.css</li>
+	    		<li>2.模块 module.css</li>
+	    		<li>3.基本共用 base.css</li>
+	    		<li>4.布局、版面 layout.css</li>
+	    		<li>5.主题 themes.css</li>
+	    		<li>6.专栏 columns.css</li>
+	    		<li>7.文字 font.css</li>
+	    		<li>8.表单 forms.css</li>
+	    		<li>9.补丁 mend.css</li>
+	    		<li>10.打印 print.css</li>
+	    	</ul>
+    	</div>
+    	<div class="footer">
+    		转载自 <a href="http://www.shejidaren.com/css-written-specifications.html" target="_blank">设计达人</a>
+    	</div>
+    </body>
+    <script>
+    </script>
+</html>
